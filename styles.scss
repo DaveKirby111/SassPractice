@@ -1,0 +1,52 @@
+$border: 2px solid black;
+$vh: 100vh;
+$width: 100%;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: $width;
+}
+
+.header {
+    width: $width;
+    text-align: center;
+
+    border: $border;
+}
+
+.nav {
+    height: $vh;
+    float: left;
+    width: 10%;
+
+    border: $border;
+
+    ul {
+        list-style-type: none
+    }
+
+    a {
+        display: block;
+        width: $width;
+        padding: 5px;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        text-decoration: none;
+    }
+}
+
+ .main {
+    float: left;
+    height: $vh;
+    width: 90%;
+
+    border: $border;
+}
+
+.footer {
+    @extend .header;
+    clear: both;
+}
