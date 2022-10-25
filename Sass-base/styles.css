@@ -11,7 +11,7 @@ body {
   width: 100%;
   text-transform: capitalize;
   font-size: 20px;
-  font-size: 30px;
+  font: 40px "audiowide", sans-serif;
   text-align: center;
   padding: 10px;
 }
@@ -20,45 +20,77 @@ body {
   background-color: lightgray;
   height: 100vh;
   float: left;
-  width: 10%;
+  width: 5%;
 }
 
 .menu {
   text-align: center;
+  margin-bottom: 50px;
 }
 .menu li {
   display: inline;
-  font-size: 20px;
   margin-left: 50px;
+  font-size: 20px;
 }
 .menu li a {
-  text-decoration: none;
+  color: black;
 }
 
 .main {
   float: left;
   height: 100vh;
-  width: 80%;
+  width: 90%;
   overflow: auto;
-  border: 2px solid black;
+  border: 5px solid darkgray;
 }
 
-.content {
+.main-2 {
+  float: left;
+  height: 100vh;
+  width: 90%;
+  overflow: auto;
+  background-image: url("images/me-bg.jpg");
+  background-size: cover;
+  border: 5px solid darkgray;
+}
+
+.main-3 {
+  float: left;
+  height: 100vh;
+  width: 90%;
+  overflow: auto;
+  background-image: url("images/ff-bg.jpg");
+  background-size: cover;
+  border: 5px solid darkgray;
+}
+
+.content-1 {
   text-transform: capitalize;
   font-size: 20px;
   padding: 50px;
+  font-family: "space mono", sans-serif;
+}
+
+.content-2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 50px;
+  margin: 50px;
+  height: 100vh;
+  font-family: "space mono", sans-serif;
+  background-color: rgba(211, 211, 211, 0.3);
 }
 
 .list {
   float: left;
-  margin-left: 150px;
+  margin-left: 100px;
   margin-bottom: 20px;
 }
 
 .aside {
   float: left;
   height: 100vh;
-  width: 10%;
+  width: 5%;
   background-color: lightgray;
 }
 
@@ -102,7 +134,7 @@ img {
 }
 
 .gall {
-  margin-top: 600px;
+  margin-top: 650px;
 }
 
 table {
@@ -128,8 +160,16 @@ table caption {
 
 .footer {
   clear: both;
-  font-size: 20px;
 }
 .footer p {
   font-size: 15px;
+}
+
+@media only screen and (max-width: 620px) {
+  nav, .content, aside, .main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

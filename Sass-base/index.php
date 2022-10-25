@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>Sass Practice</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -23,14 +25,13 @@
 
         <div class="main">
 
-            <div class="content">
+            <div class="content-1">
 
                 <ul class="menu">
-                <li><a href="">link 1</a></li>
-                <li><a href="">link 2</a></li>
-                <li><a href="">link 3</a></li>
+                <li><a href="index.php" id="link">home</a></li>
+                <li><a href="page1.php" id="link">page</a></li>
+                <li><a href="page2.php" id="link">page</a></li>
                 </ul>
-
                 
 
                 <h2>Sassing with sass</h2>

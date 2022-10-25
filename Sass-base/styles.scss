@@ -32,7 +32,7 @@ body {
     background-color: $bg;
     width: $width;
     @include text;
-    font-size: 30px;
+    font: 40px 'audiowide', sans-serif;
     text-align: center;
     padding: 10px;
 }
@@ -41,21 +41,23 @@ body {
     background-color: $bg;
     height: $vh;
     float: left;
-    width: 10%;
+    width: 5%;
 }
 
 .menu {
 
    text-align: center;
+   margin-bottom: 50px;
 
     li {
-
         display: inline;
-        font-size: 20px;
         margin-left: 50px;
+        
+        font-size: 20px;
 
         a {
-            text-decoration: none;
+            color: black;
+
            }
     }
 
@@ -64,28 +66,62 @@ body {
  .main {
     float: left;
     height: $vh;
-    width: 80%;
+    width: 90%;
     overflow: auto;
 
-    border: $border;
+    border: 5px solid darkgray;
 }
 
-.content {
+.main-2 {
+    float: left;
+    height: $vh;
+    width: 90%;
+    overflow: auto;
+
+    background-image: url("images/me-bg.jpg");
+    background-size: cover;
+
+    border: 5px solid darkgray;
+}
+
+.main-3 {
+    float: left;
+    height: $vh;
+    width: 90%;
+    overflow: auto;
+
+    background-image: url("images/ff-bg.jpg");
+    background-size: cover;
+
+    border: 5px solid darkgray;
+}
+
+.content-1 {
     @include text;
     padding: 50px;
-    
+    font-family: 'space mono', sans-serif;
+}
+
+.content-2 {
+    @include text;
+    padding: 50px;
+    margin: 50px;
+    height: $vh;
+    font-family: 'space mono', sans-serif;
+
+    background-color: rgba($bg, 30%);
 }
 
 .list {
     float: left;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-bottom: 20px;
 }
 
 .aside {
     float: left;
     height: $vh;
-    width: 10%;
+    width: 5%;
     background-color: $bg;
 }
 
@@ -124,7 +160,7 @@ img {
 }
 
 .gall {
-    margin-top: 600px;
+    margin-top: 650px;
 }
 
 table {
@@ -157,9 +193,17 @@ table {
 .footer {
     @extend .header;
     clear: both;
-    font-size: 20px;
 
     p {
         font-size: 15px;
     }
 }
+
+@media only screen and (max-width: 620px){
+    nav, .content, aside, .main {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0;
+    }
+ }
