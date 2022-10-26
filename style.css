@@ -54,13 +54,17 @@ body {
 .menu {
   text-align: center;
   margin-bottom: 50px;
+  background-color: rgba(211, 211, 211, 0.9);
 }
-.menu li {
+.menu ul {
+  padding: 20px;
+}
+.menu ul li {
   display: inline;
   margin-left: 50px;
   font-size: 20px;
 }
-.menu li a {
+.menu ul li a {
   color: black;
 }
 
@@ -69,6 +73,8 @@ body {
   height: 100vh;
   width: 90%;
   overflow: auto;
+  background-image: url("images/lake.jpeg");
+  background-size: cover;
   border: 5px solid darkgray;
 }
 
@@ -111,8 +117,9 @@ body {
 
 .list {
   float: left;
-  margin-left: 100px;
-  margin-bottom: 20px;
+  margin-left: 150px;
+  padding: 10px;
+  background-color: rgba(211, 211, 211, 0.9);
 }
 
 .aside {
@@ -127,6 +134,10 @@ h2 {
   font-size: 30px;
   text-decoration: underline;
   margin-bottom: 50px;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(211, 211, 211, 0.9);
 }
 
 h3 {
@@ -148,42 +159,33 @@ ol {
 }
 
 .MEffect {
-  float: left;
+  width: 600px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(211, 211, 211, 0.9);
 }
 
 .FFg {
-  float: right;
+  width: 600px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(211, 211, 211, 0.9);
 }
 
-img {
+figure {
   height: 200px;
   width: 350px;
   margin-bottom: 10px;
 }
 
 .gall {
-  margin-top: 650px;
-}
-
-table {
+  margin-top: 300px;
+  width: 850px;
   margin-left: auto;
   margin-right: auto;
-  caption-side: bottom;
-}
-table td {
-  padding: 20px;
-}
-table td img {
-  width: 150px;
-  height: 150px;
-  display: block;
-}
-table td p {
-  font-size: 15px;
-  text-align: center;
-}
-table caption {
-  font-size: 12px;
+  background-color: rgba(211, 211, 211, 0.9);
 }
 
 .footer {

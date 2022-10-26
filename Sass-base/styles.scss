@@ -3,6 +3,8 @@ $vh: 100vh;
 $width: 100%;
 $bg: lightgray;
 
+@import "reset";
+
 @mixin text {
     text-transform: capitalize;
     font-size: 20px;

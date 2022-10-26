@@ -7,7 +7,7 @@ add_theme_support('post-thumbnails');
 
 function sass_styles() {
 
-    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.0');
+    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.1');
 
    }
 
@@ -22,6 +22,7 @@ function sass_styles() {
           'header-menu' => 'Header Nav',
           'side-menu' => 'Side Nav',
           'footer-menu' => 'Footer Nav',
+          'cont-menu' => 'Content Nav',
        )
        );
     }
