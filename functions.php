@@ -7,7 +7,7 @@ add_theme_support('post-thumbnails');
 
 function sass_styles() {
 
-    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.1');
+    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.3');
 
    }
 
